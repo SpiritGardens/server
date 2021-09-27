@@ -37,11 +37,13 @@ const completePasswordReset = async (newPassword, token, tokenId) => {
     console.log('Password has successfully been reset, Boss!');
 }
 
-module.exports = {
+const Auth = {
     logInWithEmailPassword,
     registerUserWithEmailPassword,
     resendConfirmationEmail,
     confirmUserWithEmailPassword,
     sendResetPasswordEmail,
     completePasswordReset
-}
+};
+
+module.exports = Auth;
